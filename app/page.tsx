@@ -1,7 +1,6 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "lp-items"
-import {Product} from "components/Product/Product";
+import {Product} from "components/Product/Product"
 
 export const metadata: Metadata = {
   title: "DealDaddy.de",
@@ -24,11 +23,12 @@ export default function Web() {
 
   const products = [
     {
-      image: 'https://static.mydealz.de/threads/raw/Q2nsR/2308043_1/re/300x300/qt/60/2308043_1.jpg',
+      image: 'https://picsum.photos/200/300',
       title: 'FRANZIS 67157 - Der große Technikbausatz Hybridmotor - (inkl. Motor Soundmodul / Motorbausatz im Maßstab 1:3 / 110 Teile / Begleitbuch))'
     },
     {
-      image: 'https://static.mydealz.de/threads/raw/WF5RM/2308044_1/re/300x300/qt/60/2308044_1.jpg'
+      image: 'https://picsum.photos/200/300',
+      title: 'FRANZIS 67157 - Der große Technikbausatz Hybridmotor - (inkl. Motor Soundmodul / Motorbausatz im Maßstab 1:3 / 110 Teile / Begleitbuch))'
     },
   ]
 
