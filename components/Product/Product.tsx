@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { twMerge } from "tailwind-merge"
+import Image from 'next/image'
 
 const button = cva(
   [
@@ -39,13 +39,15 @@ export interface ProductProps extends React.ButtonHTMLAttributes<HTMLAnchorEleme
   title: string
 }
 
-export function Product({ className, intent, size, underline, ...props }: ProductProps) {
+export function Product({ ...props }: ProductProps) {
   return (
       <article
           className="relative flex flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs min-w-full mx-auto border border-white bg-white">
           <div className="w-1/3 bg-white grid place-items-center">
-              <img
+              <Image
                   src={props.image}
+                  width={500}
+                  height={300}
                   alt="tailwind logo" className="rounded-xl"/>
           </div>
           <div className="w-2/3 bg-white flex flex-col space-y-2 p-3">

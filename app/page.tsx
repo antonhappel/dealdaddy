@@ -30,6 +30,22 @@ export default function Web() {
       image: 'https://picsum.photos/200/300',
       title: 'FRANZIS 67157 - Der große Technikbausatz Hybridmotor - (inkl. Motor Soundmodul / Motorbausatz im Maßstab 1:3 / 110 Teile / Begleitbuch))'
     },
+    {
+      image: 'https://picsum.photos/200/300',
+      title: 'FRANZIS 67157 - Der große Technikbausatz Hybridmotor - (inkl. Motor Soundmodul / Motorbausatz im Maßstab 1:3 / 110 Teile / Begleitbuch))'
+    },
+    {
+      image: 'https://picsum.photos/200/300',
+      title: 'FRANZIS 67157 - Der große Technikbausatz Hybridmotor - (inkl. Motor Soundmodul / Motorbausatz im Maßstab 1:3 / 110 Teile / Begleitbuch))'
+    },
+    {
+      image: 'https://picsum.photos/200/300',
+      title: 'FRANZIS 67157 - Der große Technikbausatz Hybridmotor - (inkl. Motor Soundmodul / Motorbausatz im Maßstab 1:3 / 110 Teile / Begleitbuch))'
+    },
+    {
+      image: 'https://picsum.photos/200/300',
+      title: 'FRANZIS 67157 - Der große Technikbausatz Hybridmotor - (inkl. Motor Soundmodul / Motorbausatz im Maßstab 1:3 / 110 Teile / Begleitbuch))'
+    },
   ]
 
 
@@ -43,7 +59,7 @@ export default function Web() {
             </h1>
             <section className="grid gap-4">
               { products.map((product, index) => (
-                  (<Product key={index} image={product.image} title={product.title} />)
+                  (<Product key={index} image={product.image + '?random=' + index} title={product.title} />)
               ))}
             </section>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">

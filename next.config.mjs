@@ -8,6 +8,15 @@ import { env } from "./env.mjs"
 const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
   reactStrictMode: true,
   experimental: { instrumentationHook: true },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+        port: '',
+      },
+    ],
+  },
   rewrites() {
     return [
       { source: "/healthz", destination: "/api/health" },
