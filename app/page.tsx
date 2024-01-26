@@ -4,6 +4,7 @@ import {Product} from "components/Product/Product"
 
 export const metadata: Metadata = {
   title: "DealDaddy.de",
+  other: {'google-adsense-account': 'ca-pub-5795833978477067',},
   twitter: {
     card: "summary_large_image",
   },
